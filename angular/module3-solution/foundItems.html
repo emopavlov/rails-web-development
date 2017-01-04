@@ -1,0 +1,8 @@
+<div class="col-xs-12">
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="item in controller.found">
+      {{item.name}}, {{item.short_name}}, {{item.description}}
+       <button ng-click="controller.onRemove({index: $index});">Don't want this one!</button>
+    </li>
+  </ul>
+</div>
